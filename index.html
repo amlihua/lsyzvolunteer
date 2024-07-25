@@ -1,14 +1,262 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>梁山一中团委暨志愿者（暂定）</title>
+    <title>团委志愿者招新</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        /* 占满比例 */
+        .flex1 {
+            flex: 1;
+        }
+
+        /* 竖向 */
+        .column {
+            flex-direction: column;
+        }
+
+        /* 阴影 */
+        .yinYing {
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+                rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        }
+
+        /* 白色背景 */
+        .baiSe {
+            background-color: #fff;
+        }
+
+        /* 上下左右外边距 */
+        .mg8 {
+            margin: 8px;
+        }
+
+        /* 右外边距 */
+        .mgr8 {
+            margin-right: 8px;
+        }
+
+        /* 上外边距 */
+        .mgt8 {
+            margin-top: 8px;
+        }
+
+        /* 中间的大盒子 */
+        .lieBiaoXiang {
+            height: 1000px;
+        }
+
+        /* 导航条 */
+        .daoHang {
+            padding: 10px 20px;
+            border-bottom: 1px solid rgb(201, 201, 201);
+            font-size: 14px;
+            color: rgb(201, 201, 201);
+        }
+
+        .neiRong::-webkit-scrollbar {
+            display: none;
+            /* Chrome Safari */
+        }
+
+        /* 当屏幕宽度小于600px时要改变的css */
+        @media (max-width: 600px) {
+
+            .ceBian {
+                display: none;
+            }
+
+            /* 内容栏和数据栏flex方向改为竖向 */
+            .neiRong {
+                flex-direction: column;
+            }
+
+            /* 右区加左外边距 */
+            .youQu {
+                margin-left: 8px;
+            }
+
+            /* 数据块外边距，大小改为自动宽高 */
+            .shuJu {
+                margin: 0 0 8px;
+                flex: auto;
+            }
+        }
+
+        /*四有*/
+        .siyou {
+            margin-top: 0px;
+            text-align: end;
+            color: rgb(150, 0, 0);
+        }
+
+        /*页面隐藏*/
+        .page {
+            display: none;
+        }
+
+        /*导航栏*/
+        #dao ul a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /*导航栏边框*/
+        .border {
+            border: 1px solid #999;
+        }
+
+        /*边框顶格*/
+        .ul {
+            padding-left: 0px;
+        }
+
+        /*文字居中*/
+        .center {
+            text-align: center;
+        }
+    </style>
 </head>
 
-<body>
-    <p>网站正在开发中，敬请期待...</p>
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 3;" class="ceBian flex column baiSe yinYing">
+        <!-- 侧边头像栏 -->
+        <div style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        " class="flex">
+            <img alt="logo"
+                src="https://pic.baike.soso.com/ugc/baikepic2/0/20230225110327-1978163130_png_500_500_290834.jpg/800"
+                width="40px" height="40px">
+            <div style="margin-left: 10px">团委志愿者招新</div>
+        </div>
+        <!-- 导航栏 -->
+        <div style="background-color: rgb(150, 0, 0);" class="flex flex1 column" id="dao">
+            <ul class="ul nav flex column">
+                <div class="border">
+                    <a href="#" data-target="dashboard" class="flex1">
+                        <h2 class="center">关于我们</h2>
+                    </a>
+                </div>
+                <div class="border">
+                    <a href="#" data-target="dashboard" class="flex1">
+                        <h2 class="center">组织部</h2>
+                    </a>
+                </div>
+                <div class="border">
+                    <a href="#" data-target="dashboard" class="flex1">
+                        <h2 class="center">国护队</h2>
+                    </a>
+                </div>
+                <div class="border">
+                    <a href="#" data-target="dashboard" class="flex1">
+                        <h2 class="center">宣传部</h2>
+                    </a>
+                </div>
+                <div class="border">
+                    <a href="#" data-target="dashboard" class="flex1">
+                        <h2 class="center">文宣部</h2>
+                    </a>
+                </div>
+                <div class="border">
+                    <a href="#" data-target="dashboard" class="flex1">
+                        <h2 class="center">摄影部</h2>
+                    </a>
+                </div>
+                <div class="border">
+                    <a href="#" data-target="dashboard" class="flex1">
+                        <h2 class="center">广播站</h2>
+                    </a>
+                </div>
+                <div class="border">
+                    <a href="#" data-target="dashboard" class="flex1">
+                        <h2 class="center">活动日常</h2>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex flex1 column">
+        <!-- 头部栏 -->
+        <div style="height: 60px; z-index: 2" class="baiSe yinYing">
+            <h3 class="siyou">
+                理想 • 纪律 • 道德 • 文化
+            </h3>
+        </div>
+        <!-- 内容区 -->
+        <div class="flex flex1 neiRong" style="overflow: auto">
+            <!-- 左区 -->
+            <div class="flex1 flex column mg8">
+                <!-- 列表区-->
+                <div class="flex column">
+                    <!-- 列表项 -->
+                    <div class="lieBiaoXiang mgt8 baiSe yinYing">
+                        <h1>更多内容正在开发中...</h1>
+                        <div id="yemian" class="page">
+                            <h1>关于我们</h1>
+                            <p>内容</p>
+                        </div>
+                        <div id="yemian" class="page">
+                            <h1>组织部</h1>
+                            <p>内容</p>
+                        </div>
+                        <div id="yemian" class="page">
+                            <h1>国护队</h1>
+                            <p>内容</p>
+                        </div>
+                        <div id="yemian" class="page">
+                            <h1>宣传部</h1>
+                            <p>内容</p>
+                        </div>
+                        <div id="yemian" class="page">
+                            <h1>文宣部</h1>
+                            <p>内容</p>
+                        </div>
+                        <div id="yemian" class="page">
+                            <h1>摄影部</h1>
+                            <p>内容</p>
+                        </div>
+                        <div id="yemian" class="page">
+                            <h1>广播站</h1>
+                            <p>内容</p>
+                        </div>
+                        <div id="yemian" class="page">
+                            <h1>活动日常</h1>
+                            <p>内容</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script></script>
+
 </body>
 
 </html>
