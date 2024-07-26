@@ -180,42 +180,42 @@
         <div style="background-color: rgb(150, 0, 0);" class="flex flex1 column" id="dao">
             <ul class="ul flex column">
                 <div class="border">
-                    <a href="#" data-target="dashboard" class="flex1">
+                    <a onclick="xs1()" class="flex1">
                         <h2 class="center">关于我们</h2>
                     </a>
                 </div>
                 <div class="border">
-                    <a href="#" data-target="dashboard" class="flex1">
+                    <a onclick="xs2()" class="flex1">
                         <h2 class="center">组织部</h2>
                     </a>
                 </div>
                 <div class="border">
-                    <a href="#" data-target="dashboard" class="flex1">
+                    <a onclick="xs3()" class="flex1">
                         <h2 class="center">国护队</h2>
                     </a>
                 </div>
                 <div class="border">
-                    <a href="#" data-target="dashboard" class="flex1">
+                    <a onclick="xs4()" class="flex1">
                         <h2 class="center">宣传部</h2>
                     </a>
                 </div>
                 <div class="border">
-                    <a href="#" data-target="dashboard" class="flex1">
+                    <a onclick="xs5()" class="flex1">
                         <h2 class="center">文宣部</h2>
                     </a>
                 </div>
                 <div class="border">
-                    <a href="#" data-target="dashboard" class="flex1">
+                    <a onclick="xs6()" class="flex1">
                         <h2 class="center">摄影部</h2>
                     </a>
                 </div>
                 <div class="border">
-                    <a href="#" data-target="dashboard" class="flex1">
+                    <a onclick="xs7()" class="flex1">
                         <h2 class="center">广播站</h2>
                     </a>
                 </div>
                 <div class="border">
-                    <a href="#" data-target="dashboard" class="flex1">
+                    <a onclick="xs8()" class="flex1">
                         <h2 class="center">活动日常</h2>
                     </a>
                 </div>
@@ -226,50 +226,55 @@
     <div class="flex flex1 column">
         <!-- 头部栏 -->
         <div style="height: 60px; z-index: 2" class="baiSe yinYing">
+            <div class="shang" style="margin-top: 5px;margin-left: 5px;">
+                <img alt="logo"
+                    src="https://pic.baike.soso.com/ugc/baikepic2/0/20230225110327-1978163130_png_500_500_290834.jpg/800"
+                    width="30px" height="30px">
+            </div>
             <h3 class="siyou">
                 理想 • 纪律 • 道德 • 文化
             </h3>
         </div>
-        <!--上方导航栏-->
+        <!--手机显示时的上方导航栏-->
         <div style="height: 60px;width: auto;z-index: 3;" class="shang red yinYing" id="shangmian">
             <div class="border flex1">
-                <a href="#" data-target="dashboard" class="flex1">
-                    <p class="center">关于我们</p>
+                <a onclick="xs1()" class="flex1 center" style="margin-top: 10px;">
+                    关于我们
                 </a>
             </div>
             <div class="border flex1">
-                <a href="#" data-target="dashboard" class="flex1">
-                    <p class="center">组织部</p>
+                <a onclick="xs2()" class="flex1 center" style="margin-top: 10px;">
+                    组织部
                 </a>
             </div>
             <div class="border flex1">
-                <a href="#" data-target="dashboard" class="flex1">
-                    <p class="center">国护队</p>
+                <a onclick="xs3()" class="flex1 center" style="margin-top: 10px;">
+                    国护队
                 </a>
             </div>
             <div class="border flex1">
-                <a href="#" data-target="dashboard" class="flex1">
-                    <p class="center">宣传部</p>
+                <a onclick="xs4()" class="flex1 center" style="margin-top: 10px;">
+                    宣传部
                 </a>
             </div>
             <div class="border flex1">
-                <a href="#" data-target="dashboard" class="flex1">
-                    <p class="center">文宣部</p>
+                <a onclick="xs5()" class="flex1 center" style="margin-top: 10px;">
+                    文宣部
                 </a>
             </div>
             <div class="border flex1">
-                <a href="#" data-target="dashboard" class="flex1">
-                    <p class="center">摄影部</p>
+                <a onclick="xs6()" class="flex1 center" style="margin-top: 10px;">
+                    摄影部
                 </a>
             </div>
             <div class="border flex1">
-                <a href="#" data-target="dashboard" class="flex1">
-                    <p class="center">广播站</p>
+                <a onclick="xs7()" class="flex1 center" style="margin-top: 10px;">
+                    广播站
                 </a>
             </div>
             <div class="border flex1">
-                <a href="#" data-target="dashboard" class="flex1">
-                    <p class="center">活动日常</p>
+                <a onclick="xs8()" class="flex1 center" style="margin-top: 10px;">
+                    活动日常
                 </a>
             </div>
         </div>
@@ -281,36 +286,40 @@
                 <div class="flex column">
                     <!-- 列表项 -->
                     <div class="lieBiaoXiang mgt8 baiSe yinYing">
-                    <h1>更多内容正在开发中...</h1>
-                        <div id="yemian" class="page">
+                        <!--欢迎界面-->
+                        <div id="welcome">
+                            <h1>Welcome</h1>
+                            <p>点击导航栏开始</p>
+                        </div>
+                        <div id="gywm" class="page">
                             <h1>关于我们</h1>
                             <p>内容</p>
                         </div>
-                        <div id="yemian" class="page">
+                        <div id="zzb" class="page">
                             <h1>组织部</h1>
                             <p>内容</p>
                         </div>
-                        <div id="yemian" class="page">
+                        <div id="ghd" class="page">
                             <h1>国护队</h1>
                             <p>内容</p>
                         </div>
-                        <div id="yemian" class="page">
+                        <div id="xcb" class="page">
                             <h1>宣传部</h1>
                             <p>内容</p>
                         </div>
-                        <div id="yemian" class="page">
+                        <div id="wxb" class="page">
                             <h1>文宣部</h1>
                             <p>内容</p>
                         </div>
-                        <div id="yemian" class="page">
+                        <div id="syb" class="page">
                             <h1>摄影部</h1>
                             <p>内容</p>
                         </div>
-                        <div id="yemian" class="page">
+                        <div id="gbz" class="page">
                             <h1>广播站</h1>
                             <p>内容</p>
                         </div>
-                        <div id="yemian" class="page">
+                        <div id="hdrc" class="page">
                             <h1>活动日常</h1>
                             <p>内容</p>
                         </div>
@@ -320,7 +329,105 @@
         </div>
     </div>
 
-    <script></script>
+    <!--点击功能-->
+    <script>
+        function xs1() {
+            document.getElementById("welcome").style.display = "none"
+            document.getElementById("gywm").style.display = "flex";
+            document.getElementById("zzb").style.display = "none";
+            document.getElementById("ghd").style.display = "none";
+            document.getElementById("xcb").style.display = "none";
+            document.getElementById("wxb").style.display = "none";
+            document.getElementById("syb").style.display = "none";
+            document.getElementById("gbz").style.display = "none";
+            document.getElementById("hdrc").style.display = "none";
+        }
+
+        function xs2() {
+            document.getElementById("welcome").style.display = "none"
+            document.getElementById("gywm").style.display = "none";
+            document.getElementById("zzb").style.display = "flex";
+            document.getElementById("ghd").style.display = "none";
+            document.getElementById("xcb").style.display = "none";
+            document.getElementById("wxb").style.display = "none";
+            document.getElementById("syb").style.display = "none";
+            document.getElementById("gbz").style.display = "none";
+            document.getElementById("hdrc").style.display = "none";
+
+        }
+
+        function xs3() {
+            document.getElementById("welcome").style.display = "none"
+            document.getElementById("gywm").style.display = "none";
+            document.getElementById("zzb").style.display = "none";
+            document.getElementById("ghd").style.display = "flex";
+            document.getElementById("xcb").style.display = "none";
+            document.getElementById("wxb").style.display = "none";
+            document.getElementById("syb").style.display = "none";
+            document.getElementById("gbz").style.display = "none";
+            document.getElementById("hdrc").style.display = "none";
+        }
+
+        function xs4() {
+            document.getElementById("welcome").style.display = "none"
+            document.getElementById("gywm").style.display = "none";
+            document.getElementById("zzb").style.display = "none";
+            document.getElementById("ghd").style.display = "none";
+            document.getElementById("xcb").style.display = "flex";
+            document.getElementById("wxb").style.display = "none";
+            document.getElementById("syb").style.display = "none";
+            document.getElementById("gbz").style.display = "none";
+            document.getElementById("hdrc").style.display = "none";
+        }
+
+        function xs5() {
+            document.getElementById("welcome").style.display = "none"
+            document.getElementById("gywm").style.display = "none";
+            document.getElementById("zzb").style.display = "none";
+            document.getElementById("ghd").style.display = "none";
+            document.getElementById("xcb").style.display = "none";
+            document.getElementById("wxb").style.display = "flex";
+            document.getElementById("syb").style.display = "none";
+            document.getElementById("gbz").style.display = "none";
+            document.getElementById("hdrc").style.display = "none";
+        }
+
+        function xs6() {
+            document.getElementById("welcome").style.display = "none"
+            document.getElementById("gywm").style.display = "none";
+            document.getElementById("zzb").style.display = "none";
+            document.getElementById("ghd").style.display = "none";
+            document.getElementById("xcb").style.display = "none";
+            document.getElementById("wxb").style.display = "none";
+            document.getElementById("syb").style.display = "flex";
+            document.getElementById("gbz").style.display = "none";
+            document.getElementById("hdrc").style.display = "none";
+        }
+
+        function xs7() {
+            document.getElementById("welcome").style.display = "none"
+            document.getElementById("gywm").style.display = "none";
+            document.getElementById("zzb").style.display = "none";
+            document.getElementById("ghd").style.display = "none";
+            document.getElementById("xcb").style.display = "none";
+            document.getElementById("wxb").style.display = "none";
+            document.getElementById("syb").style.display = "none";
+            document.getElementById("gbz").style.display = "flex";
+            document.getElementById("hdrc").style.display = "none";
+        }
+
+        function xs8() {
+            document.getElementById("welcome").style.display = "none"
+            document.getElementById("gywm").style.display = "none";
+            document.getElementById("zzb").style.display = "none";
+            document.getElementById("ghd").style.display = "none";
+            document.getElementById("xcb").style.display = "none";
+            document.getElementById("wxb").style.display = "none";
+            document.getElementById("syb").style.display = "none";
+            document.getElementById("gbz").style.display = "none";
+            document.getElementById("hdrc").style.display = "flex";
+        }
+    </script>
 
 </body>
 
