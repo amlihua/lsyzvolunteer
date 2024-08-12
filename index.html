@@ -63,7 +63,7 @@
 
         /* 中间的大盒子 */
         .lieBiaoXiang {
-            height: 1000px;
+            height: auto;
         }
 
         /* 导航条 */
@@ -158,6 +158,17 @@
         .center {
             text-align: center;
         }
+
+        /*自动换行*/
+        .huanhang {
+            word-break: break-all;
+        }
+
+        /*边框0px*/
+        .px0 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
     </style>
 </head>
 
@@ -165,17 +176,19 @@
     <!-- 侧边栏 -->
     <div style="width: 200px; z-index: 3;" class="ceBian flex column baiSe yinYing mgt8">
         <!-- 侧边头像栏 -->
-        <div style="
+        <a onclick="xs()">
+            <div style="
           padding: 10px;
           align-items: center;
           justify-content: center;
           border-bottom: 1px solid #999;
         " class="flex">
-            <img alt="logo"
-                src="https://pic.baike.soso.com/ugc/baikepic2/0/20230225110327-1978163130_png_500_500_290834.jpg/800"
-                width="40px" height="40px">
-            <div style="margin-left: 10px">团委志愿者招新</div>
-        </div>
+                <img alt="logo"
+                    src="https://pic.baike.soso.com/ugc/baikepic2/0/20230225110327-1978163130_png_500_500_290834.jpg/800"
+                    width="40px" height="40px">
+                <div style="margin-left: 10px">团委志愿者招新</div>
+            </div>
+        </a>
         <!-- 导航栏 -->
         <div style="background-color: rgb(150, 0, 0);" class="flex flex1 column" id="dao">
             <ul class="ul flex column">
@@ -226,11 +239,13 @@
     <div class="flex flex1 column">
         <!-- 头部栏 -->
         <div style="height: 60px; z-index: 2" class="baiSe yinYing">
-            <div class="shang" style="margin-top: 5px;margin-left: 5px;">
-                <img alt="logo"
-                    src="https://pic.baike.soso.com/ugc/baikepic2/0/20230225110327-1978163130_png_500_500_290834.jpg/800"
-                    width="30px" height="30px">
-            </div>
+            <a onclick="xs()">
+                <div class="shang" style="margin-top: 5px;margin-left: 5px;">
+                    <img alt="logo"
+                        src="https://pic.baike.soso.com/ugc/baikepic2/0/20230225110327-1978163130_png_500_500_290834.jpg/800"
+                        width="30px" height="30px">
+                </div>
+            </a>
             <h3 class="siyou">
                 理想 • 纪律 • 道德 • 文化
             </h3>
@@ -288,28 +303,201 @@
                     <div class="lieBiaoXiang mgt8 baiSe yinYing">
                         <!--欢迎界面-->
                         <div id="welcome">
-                            <h1>Welcome</h1>
-                            <p>点击导航栏开始</p>
+                            <h1 class="center">“志”在心中，“愿”在行动</h1>
+                            <h2 style="text-align: end;">——贯彻总书记讲话，传承雷锋精神</h2>
+                            <p>
+                                &ensp;&ensp;&ensp;&ensp;岁月的清风轻轻地翻开了金秋的书页，温暖的秋阳送走了又一个各奔前程的毕业生，又满怀希望地迎来了你们——64级的高一新生！带着青春的蓬勃朝气，携着家人的殷殷嘱托，你来了，激情澎湃英姿勃发地来了， 来到了一中这块成就梦想的沃土！从此你将开始又一段崭新的人生旅程！衷心祝愿你在梁山一中茁壮成长！梁山一中团委暨志愿者协会真诚地欢迎你！
+                            </p>
+
+                            <div class="center">
+                                <img height="180" width="320" src="welcome1.JPG">
+                            </div>
+
+                            <p>
+                                &ensp;&ensp;&ensp;&ensp;梁山一中团委暨志愿者协会是校团委指导下的学生自治组织，在团的组织建设、校园文化、志愿者服务、社会实践等各个方面， 努力促进广大学子综合素质的提高。上学期，在校党委的指导下，我们紧紧围绕学校中心工作，积极响应我县创建文明城的号召，接续开展了丰富多彩的诸如校运会、中小学生县运会、清明祭英烈等丰富多彩的志愿活动。在新团员选拔中，我们开设团课，让更多同学了解并加入了共青团。我们积极培育和践行社会主义核心价值观， 不仅让核心价值观进课堂，还主办了多次征文演出比赛，组织了多次组织生活会；举办绘画书法比赛，陶治同学们的情操。争做“四德榜样”活动有序进行，定期宣传；“争创优秀团支部”“微志愿”活动，我们一直在坚持。
+                            </p>
+
+                            <div class="center">
+                                <img height="180" width="320" src="welcome2.JPG">
+                            </div>
+
+                            <p>
+                                &ensp;&ensp;&ensp;&ensp;在我们的不懈努力下，我校团委连续多年被济宁市授予红旗团委称号。校团委暨志愿者协会下设组织部、宣传部（摄影部、文宣部、广播站）等部门，同学们可以根据自己的兴趣爱好积极报名！丰富的活动有助于提高同学们的实践能力，增强团队合作意识，同时激发同学们的学习兴趣！
+                            </p>
+
+                            <p>
+                                &ensp;&ensp;&ensp;&ensp;在这里，我们已为你搭建了发挥激情与才智的舞台，提供了许多结交朋友的机会！梁山一中团委暨志愿者协会，我们的家，真诚欢迎你的加入！
+                            </p>
+
+                            <div class="center">
+                                <img height="180" width="320" src="welcome3.JPG">
+                            </div>
                         </div>
                         <div id="gywm" class="page">
                             <h1>关于我们</h1>
-                            <p>内容</p>
                         </div>
-                        <div id="zzb" class="page">
+                        <div id="zzb" class="page huanhang column">
                             <h1>组织部</h1>
-                            <p>内容</p>
+
+                            <div>
+                                <h3>⭐部门介绍</h3>
+
+                                <p class="px0">
+                                    &ensp;&ensp;&ensp;&ensp;岸苇新花白，山梨晚叶丹，正逢金秋九月，又是一年招新时，让我们共同走进组织部。 组织部，逐梦开始的地方。
+                                </p>
+                                <p class="px0">
+                                    &ensp;&ensp;&ensp;&ensp;“组”装未来，“织”位以待，组织部隶属梁山一中团委志愿者协会，是连接团委，志愿者活动的一条关键纽带，是学校团委这艘巨轮上的一颗璀璨明珠。它肩负着策划、组织、协调学校各类活动的神圣使命，同时紧密联系团委宣传部门，保障后续工作的有序展开，确保每一次活动的顺利进行。接下来让我们一起进一步了解组织部吧！
+                                </p>
+                            </div>
+                            <hr>
+
+                            <div class="center">
+                                <img height="306" width="408" src="zuzhi1.jpg" <div>
+                            </div>
+
+                            <div>
+                                <h3>⭐职能介绍</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;1.负责团务工作，如全校团员登记、注册、管理，团费收缴等</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;2.做好团组织和团员的档案建立和管理工作</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;3.发展新团员，组织开展团课，为共青团注入新鲜血脉</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;4.促进团队成员之间的合作交流，增强集体凝聚力和战斗力</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;5.负责活动的组织，协调和执行，展现组织力与创意，确保每一次活动顺利进行</p>
+                            </div>
+
+                            <div>
+                                <h3>⭐招生对象</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;1.热爱组织工作，积极热情，严谨务实，团结友爱，有责任心和敬业精神</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;2.具备良好的团队协作和交际沟通的能力，并有一定工作执行力</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;3.愿意学习，有进取心，能够为团队做出贡献</p>
+                            </div>
+
+                            <div>
+                                <h3>⭐部长的话</h3>
+                                <p class="px0">
+                                    &ensp;&ensp;&ensp;&ensp;“天生我才必有用”，青春是短暂的，但在这短暂的时光里，我们可以创造无限的精彩。如果你对团委会组织部怀有浓厚的兴趣，请不要犹豫，相信你的选择！加入我们充满活力、激情四溢的组织部，让我们共同策划、组织更多有意义、有影响力的活动，携手同行，共同为学校的繁荣发展而努力拼搏，让我们一同创造属于我们的青春回忆，书写属于我们的青春篇章，共同见证彼此的成长与蜕变！
+                                </p>
+                            </div>
+
+                            <div class="center">
+                                <img height="180" width="320" src="zuzhi2.JPG">
+                            </div>
+
                         </div>
-                        <div id="ghd" class="page">
+                        <div id="ghd" class="page huanhang column">
                             <h1>国护队</h1>
-                            <p>内容</p>
+                            <h3>⭐部门介绍</h3>
+                            <p class="px0">国护队全名国旗护卫队，是独立于组织部、宣传部的三大分支之一</p>
+                            <h3 style="color: red;" class="center">国护队不再招生！！！</h3>
+                            <h3>⭐部门风貌</h3>
+                            <div class="center">
+                                <img height="180" width="320" src="guohu1.JPG">
+                                <img height="180" width="320" src="guohu2.JPG">
+                            </div>
                         </div>
-                        <div id="xcb" class="page">
+                        <div id="xcb" class="page huanhang column">
                             <h1>宣传部</h1>
-                            <p>内容</p>
+
+                            <div>
+                                <h3>⭐部门结构</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;宣传部下除直属宣传部，还设有摄影部、广播站、文学宣传部。</p>
+                                <p class="px0"></p>
+                            </div>
+
+                            <div>
+                                <h3>⭐部门介绍</h3>
+                                <p class="px0">
+                                    &ensp;&ensp;&ensp;&ensp;在内部加强沟通交流，活动前积极踊跃参与准备工作活动中，做好记录，活动后做好宣传工作。事事落到实处，时时征求创新。进行一些活动时与组织部协同进行志愿服务。
+                                    做好内外宣传工作。</p>
+                            </div>
+                            <hr>
+
+                            <div class="center">
+                                <img height="180" width="320" src="xuanchuan1.JPG">
+                            </div>
+
+                            <div>
+                                <h3>⭐职能介绍</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;1.负责团的宜传教育工作，大力及时的对团委会组织和参与的各项活动进行宜传。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;2.配合团委，积极开展学生思想教育工作。</p>
+                                <p class="px0">
+                                    &ensp;&ensp;&ensp;&ensp;3.鼓励部门成员与其他部门成员交往，及时了解其他部门信息，把工作状态由原来的被动转为主动，协助其他部门工作的完成，以更好的起到宣传作用。
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3>⭐招生对象</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;面向所有积极参加活动的64级新生们</p>
+                            </div>
+
+                            <div>
+                                <h3>⭐部长的话</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;同学，直属宣传部拍了拍你，并向你递出了橄榄枝。</p>
+                            </div>
+                            <hr>
+                            <div class="center">
+                                <img height="215" width="300" src="xuanchuan2.png">
+                            </div>
+
                         </div>
-                        <div id="wxb" class="page">
+                        <div id="wxb" class="page huanhang column ">
                             <h1>文宣部</h1>
-                            <p>内容</p>
+
+                            <div>
+                                <h3>⭐部门结构</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;宣传部下设部门之一</p>
+                            </div>
+
+                            <div>
+                                <h3>⭐部门介绍</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;在这里，可以挥毫泼墨，让满腔热爱的你，心有所属，文有所归。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;在这里，可以纵横捭阖，让满怀激情的你，思有所依，志有所展。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;在这里，可以谈今论古，让满心憧憬的你，闻有所获，研有所悟。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;在这里，你可以大放异彩，感受灵魂频率的共振，追寻心中的乌托邦。</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="center">
+                                <img height="155.7" width="218" src="wenxuan1.png">
+                            </div>
+
+                            <div>
+                                <h3>⭐职能介绍</h3>
+                                <p class="px0">
+                                    &ensp;&ensp;&ensp;&ensp;文学宣传部是隶属于宣传部，服从宣传部有关规章制度和领导下，通过校园采访与日常随笔方式开展部门工作以及辅助团委志愿者协会各项工作的部门。
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;1.辅助校刊《四有月刊》的校稿工作；</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;2.记录有关学校重大活动的流程并撰写报道；</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;3.配合好升旗仪式的进行；</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;4.进行每周例会。</p>
+                            </div>
+                            <hr>
+
+                            <div class="center">
+                                <img height="213" width="298" src="wenxuan2.png">
+                            </div>
+
+                            <div>
+                                <h3>⭐招生对象</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;1. 热爱文学创作，有良好的笔力驾驭各种文风。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;2. 具备吃苦耐劳的品质，能够认真完成部门各项工作。</p>
+                            </div>
+
+                            <div>
+                                <h3>⭐部长的话</h3>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;白云苍狗，四季枯荣，我们曾伴着悠长蝉鸣，奔跑在烈风中。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;十几年人间旅程，你也许看过绚烂日出，星河浮沉；听过大海歌唱，清风低吟；身披晨曦,一路生花。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;既走过一段岁月，何不记录下这人间烟火，描绘种种爱恨聚散，写一场风雨波澜，留一份眷念触动。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;花径不曾缘客扫，蓬门今始为君开。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;文学宣传部今面向全体64级新生进行招新，欢迎踊跃报名。</p>
+                                <p class="px0">&ensp;&ensp;&ensp;&ensp;文宣与你的故事，从这里开始。</p>
+                            </div>
+                            <hr>
+
+                            <div class="center">
+                                <img height="212" width="298" src="wenxuan3.png">
+                            </div>
+                            <hr>
+
                         </div>
                         <div id="syb" class="page">
                             <h1>摄影部</h1>
@@ -331,6 +519,18 @@
 
     <!--点击功能-->
     <script>
+        function xs() {
+            document.getElementById("welcome").style.display = "block"
+            document.getElementById("gywm").style.display = "none";
+            document.getElementById("zzb").style.display = "none";
+            document.getElementById("ghd").style.display = "none";
+            document.getElementById("xcb").style.display = "none";
+            document.getElementById("wxb").style.display = "none";
+            document.getElementById("syb").style.display = "none";
+            document.getElementById("gbz").style.display = "none";
+            document.getElementById("hdrc").style.display = "none";
+        }
+
         function xs1() {
             document.getElementById("welcome").style.display = "none"
             document.getElementById("gywm").style.display = "flex";
